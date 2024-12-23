@@ -1,0 +1,3 @@
+﻿  OSProject.cpp
+D:\C++ && C#\OSProject\OSProject.cpp(376,44): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  OSProject.vcxproj -> D:\C++ && C#\OSProject\x64\Debug\OSProject.exe
