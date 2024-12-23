@@ -18,14 +18,13 @@ struct stProcess
 	int FinishTime = 0;
 	int WaitingTime = 0;
 	int TurnaroundTime = 0;
-	vector<pair<int, int>> ExecutionTimeline;
 };
 
 struct stGanttSegment
 {
-	string ProcessName;
-	int StartTime;
-	int EndTime;
+	string ProcessName = "";
+	int StartTime = 0;
+	int EndTime = 0;
 };
 
 int ReadNumber(string Message)
@@ -438,7 +437,6 @@ void ResetValues(vector<stProcess>& vProcesses, vector<stGanttSegment>& vGanttCh
 		P.WaitingTime = 0;
 		P.TurnaroundTime = 0;
 		P.RemainingTime = 0;
-		P.ExecutionTimeline.clear();
 	}
 
 	vGanttChart.clear();
